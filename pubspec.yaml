@@ -47,6 +47,9 @@ dependencies:
   web_socket_channel: ^3.0.3
   fl_chart: ^1.0.0
 
+  http: ^1.2.2
+  kakao_flutter_sdk_auth: ^1.9.7+3
+
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +80,10 @@ flutter:
   assets:
     - assets/molet.png
     - assets/kakaologin.png
+    - assets/vehicles/moletOne_car_mint.png
+    - assets/vehicles/moletOne_car_white.png
+    - assets/vehicles/moletTwo_car_black.png
+    - assets/vehicles/moletTwo_car_red.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

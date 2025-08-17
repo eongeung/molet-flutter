@@ -45,5 +45,46 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+
+	<!-- ===== 추가: 로컬 네트워크 권한 프롬프트 (iOS14+) ===== -->
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>차량과 통신하기 위해 동일 네트워크의 기기에 접속합니다.</string>
+
+	<!-- ===== 추가: ATS 임시 예외 (개발용). 배포 전엔 제거하고 wss:// 사용 ===== -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<!--
+		배포 시에는 위 키를 지우고, 필요하다면 특정 IP만 예외로 좁혀서 사용:
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>192.168.4.1</key>
+			<dict>
+				<key>NSIncludesSubdomains</key><true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key><true/>
+			</dict>
+		</dict>
+		-->
+	</dict>
+
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakaokompassauth</string>
+		<string>kakaolink</string>
+		<string>kakaotalk</string>
+		<string>kakaoplatformlogin</string>
+	</array>
+
+	<!-- 네이티브 앱 키 기반. 사용 네이티브 키 = facdc920b19f056fbdfaa651198f89fa  -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kakaofacdc920b19f056fbdfaa651198f89fa</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

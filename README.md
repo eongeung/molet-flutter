@@ -17,9 +17,9 @@ QR 스캔 탑승 → 자율주행 → QR 하차 후 결제
 
 ## ⚙️ Tech Stack
 
-Frontend: Flutter
+Frontend: Flutter, React
 
-Backend: Spring Boot, MySQL
+Backend: Spring Boot, MySQL, Docker
 
 Blockchain: Geth (Clique PoA, ERC-20 기반 MYT 토큰)
 
@@ -28,5 +28,5 @@ Hardware: Raspberry Pi 4, 카메라·LiDAR·DC모터·LED/부저, QR 스캐너
 ## 📂 Repository
 
 Frontend: https://github.com/motowallet/molet-flutter
-
+Frontend: https://github.com/motowallet/molet-fe
 Backend: https://github.com/motowallet/molet-be
